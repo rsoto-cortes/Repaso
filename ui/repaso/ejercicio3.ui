@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Calcular Fx</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Estilo general del diálogo */
+QDialog {
+    background-color: #f5f5f5;   /* Fondo claro */
+    border: 1px solid #dcdcdc;   /* Borde sutil */
+    border-radius: 8px;          /* Esquinas suaves */
+    color: #333333;              /* Texto neutro */
+}
+
+/* Etiquetas */
+QLabel {
+    color: #444444;              /* Gris oscuro para contraste */
+    padding: 4px;
+}
+
+/* Campos de texto */
+QLineEdit {
+    background-color: #ffffff;   /* Fondo blanco */
+    border: 1px solid #cccccc;   /* Borde suave */
+    border-radius: 4px;
+    padding: 6px;
+    selection-background-color: #87cefa; /* Azul claro al seleccionar */
+    selection-color: #000000;
+}
+
+QLineEdit:focus {
+    border: 1px solid #1a73e8;   /* Azul corporativo al enfocar */
+    background-color: #fafafa;
+}
+
+/* Botones */
+QPushButton {
+    background-color: #1a73e8;   /* Azul profesional */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #1669c1;   /* Azul más intenso al pasar el cursor */
+}
+
+QPushButton:pressed {
+    background-color: #0d47a1;   /* Azul profundo al presionar */
+}
+
+QPushButton:disabled {
+    background-color: #e0e0e0;   /* Gris claro para deshabilitado */
+    color: #888888;
+}
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>20</y>
+     <width>411</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Ingrese los datos</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>34</x>
+     <y>85</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>x=</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>34</x>
+     <y>135</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>u=</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>34</x>
+     <y>195</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>a=</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_fx">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>300</y>
+     <width>331</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Fx=</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ent_x">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>90</y>
+     <width>113</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ent_u">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>141</y>
+     <width>113</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ent_a">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>200</y>
+     <width>113</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_calcular">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>250</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Calcular</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
