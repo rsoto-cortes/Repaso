@@ -91,8 +91,8 @@ QPushButton:disabled {
   <widget class="QPushButton" name="btn_generar">
    <property name="geometry">
     <rect>
-     <x>162</x>
-     <y>60</y>
+     <x>170</x>
+     <y>50</y>
      <width>101</width>
      <height>31</height>
     </rect>
@@ -101,10 +101,10 @@ QPushButton:disabled {
     <string>Generar</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lbl_tablas">
+  <widget class="QTextEdit" name="lbl_tablas">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>20</x>
      <y>90</y>
      <width>413</width>
      <height>251</height>
@@ -115,14 +115,8 @@ QPushButton:disabled {
      <pointsize>7</pointsize>
     </font>
    </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-   </property>
-   <property name="wordWrap">
-    <bool>false</bool>
+   <property name="readOnly">
+    <bool>true</bool>
    </property>
   </widget>
  </widget>

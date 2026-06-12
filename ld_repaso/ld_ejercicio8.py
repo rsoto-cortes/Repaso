@@ -13,4 +13,4 @@ class dialogo_ej8(QDialog):
     def generar_tabla(self):
         ejercicio = Tablas()
         resultado=ejercicio.mostrar_tabla()
-        self.lbl_tablas.setText(resultado)
+        self.lbl_tablas.setPlainText(resultado)
